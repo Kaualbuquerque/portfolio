@@ -1,0 +1,51 @@
+@use '@/styles/layout/flex' as *;
+@use '@/styles/layout/long-shadow' as *;
+
+.hero {
+    @include flex(column, center, center);
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    text-align: left;
+    font-size: 3em;
+    line-height: 2em;
+    letter-spacing: 2px;
+    transform: rotate(-20deg) skew(25deg);
+}
+
+.hero_title {
+    @include long-shadow($shadow-count, $text-shadow-color);
+    font-family: var(--font-modak);
+    font-weight: 400;
+
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid currentColor;
+
+    width: 0;
+    margin-inline: auto;
+    text-align: center;
+
+    animation:
+        typing 3s steps(18, end) forwards,
+        blink 0.8s step-end infinite;
+}
+
+
+.hero_highlight {
+    font-family: var(--font-moirai);
+    font-weight: 900;
+}
+
+
+@keyframes typing {
+    to {
+        width: 16ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}

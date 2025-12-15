@@ -1,0 +1,15 @@
+$text-shadow-color: #a5a5a5;
+$shadow-count: 5;
+
+@mixin long-shadow($count, $color) {
+    $shadows: (
+    );
+
+@for $i from 1 through $count {
+    $shadows: append($shadows,
+            -#{$i}px #{$i}px 0 $color,
+            comma);
+}
+
+text-shadow: $shadows;
+}

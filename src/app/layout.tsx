@@ -1,15 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { Moirai_One, Modak, Roboto } from "next/font/google";
+import "../styles/global.scss";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+export const moirai = Moirai_One({
+  subsets: ['latin'],
+  weight: ["400"],
+  variable: '--font-moirai',
+  display: 'swap'
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+export const modak = Modak({
+  subsets: ['latin'],
+  weight: ["400"],
+  variable: '--font-modak',
+  display: 'swap'
+});
+
+export const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: '--font-roboto',
+  display: 'swap'
 });
 
 export const metadata: Metadata = {
@@ -23,8 +34,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="pt-BR"
+      className={`${moirai.variable} ${modak.variable} ${roboto.variable}`}>
+      <body >
         {children}
       </body>
     </html>
