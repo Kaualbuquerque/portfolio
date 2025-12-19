@@ -1,0 +1,19 @@
+@use "../../styles/layout/flex" as *;
+
+.skill{
+    @include flex(column, center, center, 1rem);
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    padding: 1rem 0;
+    border-radius: 7.5px;
+
+    .icon{
+        align-self: center;
+        font-size: 3rem;
+    }
+
+    p{
+        align-self: center;
+        font-size: 1.2rem;
+    }
+}
