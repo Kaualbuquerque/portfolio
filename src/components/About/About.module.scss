@@ -1,7 +1,7 @@
 @use '@/styles/layout/grid' as *;
 
 .about {
-    @include grid(2, auto, 5rem);
+    @include grid(2, auto, 4rem);
     width: 100%; 
 }
 

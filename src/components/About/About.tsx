@@ -19,7 +19,7 @@ export default function About() {
             },
             {
                 threshold: .2,
-                rootMargin: "0px 0px -200px 0px"
+                rootMargin: "100px 0px 100px 0px"
             }
         );
 

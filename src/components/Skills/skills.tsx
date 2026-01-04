@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import SkillItem from "./SkillItem"
 import styles from "./Skills.module.scss"
-import { skills } from "./skills.data"
+import { skills } from "../../data/skills.data"
 import { HiCode as Icon } from "react-icons/hi"
 
 export default function Skills() {
@@ -18,8 +18,8 @@ export default function Skills() {
                 });
             },
             {
-                threshold: .2,
-                rootMargin: "0px 0px -200px 0px"
+                threshold: .5,
+                rootMargin: "0px -100px 0px 0px"
             }
         );
 

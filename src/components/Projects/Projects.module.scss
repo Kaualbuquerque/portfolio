@@ -1,0 +1,20 @@
+@use "../../styles/layout/grid" as *;
+@use "../../styles/layout/flex" as *;
+
+.projects {
+    @include flex(column, center, start, .5rem);
+    width: 100%;
+
+    h2{
+        margin-left: 5rem; 
+        font-size: 2em;
+        font-weight: 800
+    }
+
+    ul {
+        width: 95%;
+        @include grid(4, auto, 1em);
+        justify-items: center;
+        align-self: center;
+    }
+}

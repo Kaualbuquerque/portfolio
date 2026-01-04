@@ -26,6 +26,7 @@
 
     ul {
         @include grid(3, auto, 1rem);
+        width: 100%;
         padding: 1rem;
     }
 }

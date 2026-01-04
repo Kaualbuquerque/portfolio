@@ -10,6 +10,8 @@ import {
     SiGit,
     SiDocker
   } from 'react-icons/si';
+
+  import {FaJava} from "react-icons/fa"
   
   import { IconType } from 'react-icons';
   
@@ -24,6 +26,7 @@ import {
     { name: 'SCSS', Icon: SiSass },
     { name: 'JavaScript', Icon: SiJavascript },
     { name: 'TypeScript', Icon: SiTypescript },
+    { name: 'java', Icon: FaJava },
     { name: 'React', Icon: SiReact },
     { name: 'Angular', Icon: SiAngular },
     { name: 'SQL', Icon: SiPostgresql },

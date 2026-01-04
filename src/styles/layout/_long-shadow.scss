@@ -1,4 +1,4 @@
-$text-shadow-color: var(--text-shadow);
+$text-shadow-color: var(--shadow);
 $shadow-count: 5;
 
 @mixin long-shadow($count, $color) {
