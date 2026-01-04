@@ -5,15 +5,15 @@
     @include flex(column, center, start, .5rem);
     width: 100%;
 
-    h2{
-        margin-left: 5rem; 
+    .title{
         font-size: 2em;
+        margin-left: 2.5rem;
         font-weight: 800
     }
 
     ul {
-        width: 95%;
-        @include grid(4, auto, 1em);
+        width: 90%;
+        @include grid(3, auto, 1em);
         justify-items: center;
         align-self: center;
     }

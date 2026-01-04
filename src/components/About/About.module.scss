@@ -3,11 +3,11 @@
 .about {
     @include grid(2, auto, 4rem);
     width: 100%; 
+    margin-left: 5rem;
 }
 
 
 .block {
-    margin-left: 5rem;
     grid-column: 1;
 
     opacity: 0;
@@ -37,7 +37,7 @@
 .text {
     text-align: justify;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-bottom: 1em;
 }
 

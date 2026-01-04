@@ -5,7 +5,7 @@ import { projects } from "@/data/projects.data"
 export default function Projects() {
     return (
         <section className={styles.projects}>
-            <h2>Projetos</h2>
+            <h2 className={styles.title}>Projetos</h2>
             <ul>
             {projects.map((project) => (
                     <Project 

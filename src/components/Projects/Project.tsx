@@ -32,7 +32,7 @@ export default function Project({
 
             <div className={styles.actions}>
                 <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-                    Github <FiGithub />
+                    Repositório <FiGithub />
                 </a>
                 <a href={appUrl} target="_blank" rel="noopener noreferrer">
                     Aplicação <FiExternalLink />
